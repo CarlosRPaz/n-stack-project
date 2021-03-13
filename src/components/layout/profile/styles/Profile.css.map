@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,QAAQ,CAAC;EACL,KAAK,EAAE,KAAK;EACZ,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,gBAAgB,EAAE,KAAK;EAEvB,gBAAgB,EAAE,0CAA0C;CAC/D;;AAED,AAAA,cAAc,CAAC;EACX,OAAO,EAAE,IAAI;EACb,IAAI,EAAE,GAAG;EACT,SAAS,EAAE,MAAM;EACjB,cAAc,EAAE,MAAM;CACzB;;AAED,AAAA,cAAc,CAAC;EACX,gBAAgB,EChBD,OAAO;EDiBtB,UAAU,ECfD,wBAAwB,CAAC,GAAG,CAAC,GAAG,CAAC,IAAI,CAAC,GAAG;EDiBlD,aAAa,EAAE,IAAI;CACtB",
+    "sources": [
+        "Profile.scss",
+        "../../../../sass/main.scss"
+    ],
+    "names": [],
+    "file": "Profile.css"
+}

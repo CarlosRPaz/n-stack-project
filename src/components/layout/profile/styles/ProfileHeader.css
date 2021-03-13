@@ -1,0 +1,185 @@
+.profileheader {
+  background-color: #f8f8ff;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.profileheader__cover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.profileheader__cover > img {
+  width: 100%;
+  height: 140px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.profileheader__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+}
+
+.profileheader__bodyLeft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0.2;
+      -ms-flex: 0.2;
+          flex: 0.2;
+}
+
+.profileheader__avatar {
+  height: 130px !important;
+  width: 130px !important;
+  margin-top: -65px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 90px;
+  border: 5px solid #f8f8ff;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.profileheader__bodyMiddle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0.6;
+      -ms-flex: 0.6;
+          flex: 0.6;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 6px;
+}
+
+.profileheader__bodyUsername {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.profileheader__bodyTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+}
+
+.profileheader__bodyPosition {
+  font-weight: 600;
+}
+
+.profileheader__bodyTeam {
+  font-weight: 600;
+  color: red;
+}
+
+.profileheader__bodyBio {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.profileheader__bodyStats {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.profileheader__bodyStatsCol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 20px;
+}
+
+.profileheader__bodyStatsColTitle {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.profileheader__bodyStatsColNumber {
+  font-size: 14px;
+}
+
+.profileheader__bodyRight {
+  -webkit-box-flex: 0.2;
+      -ms-flex: 0.2;
+          flex: 0.2;
+  position: relative;
+}
+
+.profileheader__bodyRight__buttonfield {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 6px;
+  right: 0;
+}
+
+.profileheader__bodyRight__buttonfield button {
+  background-color: #f8f8ff;
+  color: black;
+  font-weight: 600;
+  font-size: 12px;
+  margin: 4px;
+  border: none;
+  padding: 4px 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+}
+
+.profileheader__bodyRight__buttonfield button:focus {
+  outline: none;
+}
+
+.profileheader__bodyRight__buttonfield button:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.profileheader__bodyRight__buttonfield .recruitButton {
+  background-color: #FFC72C;
+  display: none;
+}
+
+.buttonIcon {
+  height: 18px !important;
+  margin-right: 2px;
+}
+
+.moreverticon {
+  margin-right: 6px;
+  color: black;
+  height: 32px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=ProfileHeader.css.map */

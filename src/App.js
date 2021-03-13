@@ -1,57 +1,58 @@
 import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
 import './App.css';
+import Home from './components/layout/home/Home'
+import Footer from './components/layout/footer/Footer'
+import Landing from './components/layout/landing/Landing'
+import Navbar from './components/layout/navbar/Navbar'
+import Profile from './components/layout/profile/Profile'
+import Teams from './components/layout/teams/Teams'
+import Stacks from './components/layout/stacks/Stacks'
+import Articles from './components/layout/articles/Articles'
+import Explore from './components/layout/explore/Explore'
+
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <span>
-          <span>Learn </span>
-          <a
-            className="App-link"
-            href="https://reactjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux-toolkit.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux Toolkit
-          </a>
-          ,<span> and </span>
-          <a
-            className="App-link"
-            href="https://react-redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React Redux
-          </a>
-        </span>
-      </header>
-    </div>
+    <Router>
+      <div className="app">
+        <Switch>
+          <Route path='/profile'>
+            <Navbar />
+            <Profile />
+            <Footer />
+          </Route>
+          <Route path='/teams'>
+            <Navbar />
+            <Teams />
+            <Footer />
+          </Route>
+          <Route path='/stacks'>
+            <Navbar />
+            <Stacks />
+            <Footer />
+          </Route>
+          <Route path='/articles'>
+            <Navbar />
+            <Articles />
+            <Footer />
+          </Route>
+          <Route path='/explore'>
+            <Navbar />
+            <Explore />
+            <Footer />
+          </Route>
+          <Route path='/landing'>
+            <Landing />
+          </Route>
+          <Route path='/'>
+            <Navbar />
+            <Home />
+            <Footer />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
