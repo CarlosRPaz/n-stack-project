@@ -32,7 +32,7 @@ function ProfileHeader() {
                         <span className='profileheader__bodyTeam'>St. Louis Sounders</span>
                     </div>
                     <div className='profileheader__bodyBio'>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut labore et dolore magna ut labore et dolore magna ut labore et dolore magna ut labore et dolore magna.
                     </div>
                     <div className='profileheader__bodyStats'>
                         <div className='profileheader__bodyStatsCol'>

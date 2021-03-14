@@ -1,12 +1,15 @@
 @import './../../../../sass/main.scss';
 
 .profile {
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     background-color: green;
 
     background-image: url('./../../../../img/tribackground.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .profile__body {
@@ -21,4 +24,169 @@
     box-shadow: $box-shadow;
 
     margin-bottom: 20px;
+    padding: 10px;
+
+    h4 {
+        font-size: 20px;
+        margin-bottom: 5px;
+        //margin-left: 5px;
+    }
+}
+
+.profile__summary {
+    background-color: $text-color-light;
+    height: 500px;
+    margin: 5px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.profile__summaryGame {
+    background-color: lightgreen;
+    border-bottom: 1px solid gray;
+    flex: 0.25;
+}
+
+.profile__submain {
+    display: flex;
+}
+.profile__teams {
+    background-color: $text-color-light;
+    display: flex;
+    flex-direction: column;
+    flex: 0.5;
+    margin: 5px;
+    padding: 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.profile__team {
+    background-color: lightgreen;
+    border-bottom: 1px solid gray;
+    flex: 0.25;
+}
+
+.profile__highlights {
+    background-color: $text-color-light;
+    flex: 0.5;
+    margin: 5px;
+    padding: 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.highlights__row {
+    background-color: lightgreen;
+    display: flex;
+}
+.profile__highlight {
+    background-color: $text-color-light;
+    flex: 0.5;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+    margin: 5px;
+    
+    img {
+        width: 100%;
+        height: 140px;
+        object-fit: cover;
+        cursor: pointer;
+    }
+}
+.highlight__body {
+    padding: 2px 10px 10px 10px;
+    position: relative;
+}
+.highlight__title {
+    font-weight: 600;
+    margin-right: 30px;
+    cursor: pointer;
+}
+.highlight__moreoptions {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+.highlight__stats {
+    margin-top: 10px;
+    display: flex;
+    font-size: 12px;
+}
+.highlight__stat {
+    margin-right: 12px;
+}
+.highlight__statNum {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.profile__reviews {
+    background-color: $text-color-light;
+    margin: 5px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.profile__reviewsContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.profile__review {
+    display: flex;
+    flex-direction: column;
+    flex: 0.25;
+    margin: 10px;
+    padding: 12px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.profile__reviewHeader {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.profile__reviewHeaderAvatar {
+    margin-right: 10px;
+}
+.profile__reviewHeaderReviewer {
+    height: 50px;
+}
+.profile__reviewHeaderReviewerName {
+    font-weight: 600;
+    margin-top: 3px;
+}
+.profile__reviewHeaderReviewerTitle {
+    font-size: 12px;
+    font-weight: 600;
+
+    span {
+        color: teal;
+    }
+}
+.profile__reviewQuote {
+    background-color: rgb(207, 207, 207);
+    height: 250px;
+    display: flex;
+align-items: center;
+position: relative;
+}
+.profile__reviewQuoteWords {
+    padding: 0 20px 0 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.reviewQuoteIcon1 {
+    position: absolute;
+    top: 0;
+    transform: rotate(180deg);
+    font-size: 32px;
+    margin: 10px;
+}
+.reviewQuoteIcon2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 32px;
+    margin: 10px;
 }
