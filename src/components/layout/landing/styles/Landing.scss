@@ -1,0 +1,184 @@
+@import './../../../../sass/main.scss';
+
+.landing {
+    width: 100%;
+    flex-direction: row;
+
+    height: 100%;
+}
+
+.landing__leftright-container {
+    position: relative;
+    z-index: 1;
+}
+
+.landing__wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.landing__right {
+    background-color: $dark-color;
+    height: 100%;
+    width: 40%;
+    float: right;
+    color: $text-color-light;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.landing__logo {
+    width: 80px;
+    object-fit: contain;
+    margin: auto auto;
+    margin: 140px auto 0 auto;
+
+    filter: drop-shadow(2px 4px 8px #696969);
+}
+
+.landing__company {
+    margin: auto auto;
+    margin: 10px auto 40px auto;
+    font-weight: 800;
+    font-size: 28px;
+}
+
+.landing__switch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.signinButton {
+    margin-right: 10px;
+    font-weight: 600;
+    font-size: 26px;
+}
+.registerButton {
+    margin-left: 10px;
+    margin-top: 5px;
+    color: #2bbef2;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.landing__footer {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: rgb(121, 121, 121);
+    font-weight: 600;
+    position: absolute;
+    bottom: 0;
+
+    div {
+        margin: 0 5px 0 5px;
+    }
+}
+
+
+
+
+
+
+
+
+.landing__left {
+    float: left;
+    width: 60%;
+    height: 100%;
+    overflow: auto;
+
+    background-image: url('./../../../../img/tribackground.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.landing__left-box {
+    padding-left: 120px;
+    padding-right: 120px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    border-bottom: 1px solid black;
+}
+
+.landing__box-content {
+    height: auto;
+    width: 100%;
+
+    h1 {
+        font-size: 56px;
+        font-weight: 700;
+        color: #2bbef2;
+    }
+}
+
+.landing__content-pitches {
+    margin-top: 80px;
+}
+
+.landing__content-pitch {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+
+    font-size: 36px;
+    font-weight: 600;
+}
+.content-pitch-icon {
+    height: 78px !important;
+    width: 78px !important;
+
+    margin-right: 30px;
+}
+
+.split-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.landing__box-split-pitch {
+    background-color: lightblue;
+    flex: 0.5;
+
+    h2 {
+        font-size: 38px;
+        margin-bottom: 20px;
+    }
+    p {
+        font-size: 28px;
+        font-weight: 600;
+    }
+}
+.landing__box-split-graphic {
+    background-color: lightcoral;
+    flex: 0.5;
+}
+
+// *** Landing Scrollbar styling *******************************
+#style-3::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: #F5F5F5;
+}
+
+#style-3::-webkit-scrollbar
+{
+  width: 4px;
+  background-color: #F5F5F5;
+}
+
+#style-3::-webkit-scrollbar-thumb
+{
+  background-color: #929292;
+}

@@ -1,0 +1,57 @@
+.post {
+  background-color: white;
+  padding: 15px;
+  padding-left: 25px;
+  margin-bottom: 10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.post__header {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.post__info {
+  margin-left: 10px;
+}
+
+.post__info > h2 {
+  font-size: 18px;
+}
+
+.post__info > p {
+  font-size: 12px;
+  color: gray;
+}
+
+.post__body {
+  overflow-wrap: anywhere;
+  margin-top: 20px;
+}
+
+.post__body > h2 {
+  font-size: 15px;
+}
+
+.post__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.moreverticon {
+  position: absolute;
+  right: 0;
+  margin-right: 6px;
+  color: black;
+  height: 32px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=Post.css.map */

@@ -7,8 +7,13 @@ import SearchIcon from '@material-ui/icons/Search';
 import ChatIcon from '@material-ui/icons/Chat';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import { Avatar } from '@material-ui/core';
+import { useSelector } from "react-redux";
+import { selectUser } from "./../../../features/userSlice";
 
 function Navbar() {
+
+    const user = useSelector(selectUser);
+
     return (
         <div className='navbar'>
             <div className='navbar__left'>
@@ -43,7 +48,7 @@ function Navbar() {
 
                     <NotificationsIcon className="navbar__icon" />
                     <Link to='/profile'>
-                        <Avatar className="navbar__iconAvatar" />
+                        <Avatar className="navbar__iconAvatar" src={user.photoUrl} />
                     </Link>
                 </div>
             </div>

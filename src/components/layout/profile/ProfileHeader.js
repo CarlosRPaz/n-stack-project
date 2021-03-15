@@ -6,8 +6,11 @@ import AssignmentIcon from '@material-ui/icons/Assignment';
 import AddIcon from '@material-ui/icons/Add';
 import ChatIcon from '@material-ui/icons/Chat';
 import GroupAddIcon from '@material-ui/icons/GroupAdd';
+import { useSelector } from "react-redux";
+import { selectUser } from "./../../../features/userSlice";
 
 function ProfileHeader() {
+    const user = useSelector(selectUser);
     return (
         <div className="profileheader">
             <div className="profileheader__cover">
@@ -20,12 +23,12 @@ function ProfileHeader() {
 
                 <div className="profileheader__bodyLeft">
                     <Avatar className='profileheader__avatar'
-                        src="https://pbs.twimg.com/profile_images/1188911868863221772/fpcyKuIW_400x400.jpg"
+                        src={user.photoUrl}
                         alt=""
                     />
                 </div>
                 <div className="profileheader__bodyMiddle">
-                    <div className='profileheader__bodyUsername'>xQc</div>
+                    <div className='profileheader__bodyUsername'>{user.displayName}</div>
                     <div className="profileheader__bodyTitle">
                         <span className="profileheader__bodyPosition">Content Creator</span>
                         <span>&nbsp;for&nbsp;</span>

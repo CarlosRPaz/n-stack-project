@@ -1,0 +1,22 @@
+.postOption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 15px;
+  color: gray;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.postOption:hover {
+  background-color: whitesmoke;
+  border-radius: 4px;
+}
+
+.postOption > h4 {
+  margin-left: 5px;
+}
+/*# sourceMappingURL=PostOption.css.map */
