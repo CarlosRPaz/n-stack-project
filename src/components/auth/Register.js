@@ -12,7 +12,9 @@ function Register() {
     const [profilePic, setProfilePic] = useState("");
     const dispatch = useDispatch();
 
-    const register = () => {
+    const register = (e) => {
+        e.preventDefault();
+
         if (!name) {
             return alert('Please enter your full name!');
         }

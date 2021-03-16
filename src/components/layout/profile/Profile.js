@@ -1,11 +1,33 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import './styles/Profile.css'
 import ProfileHeader from './ProfileHeader'
 import { Avatar } from '@material-ui/core';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import FormatQuoteIcon from '@material-ui/icons/FormatQuote';
 
+import axios from './../../../api/axios';
+import requests from './../../../api/Requests';
+
 function Profile() {
+
+    const [playerStats, setPlayerStats] = useState([]);
+
+    useEffect(() => {
+        async function fetchData() {
+            const request = await axios.get(requests.fetchPlayerStats);
+            setPlayerStats(
+                request.data.results[
+                Math.floor(Math.random() * request.data.results.length - 1)
+                ]
+            );
+            return request;
+        }
+
+        fetchData();
+    }, [])
+
+    console.log(playerStats);
+
     return (
         <div className='profile'>
             <div className="profile__body">
@@ -14,7 +36,11 @@ function Profile() {
                 <div className="profile__main">
                     <div className="profile__summary">
                         <h4>Summary</h4>
-                        <div className="profile__summaryGame">Game 1</div>
+                        <div className="profile__summaryGame">Game 1
+                        <h5>Username</h5>
+                            <h5>Game</h5>
+                            <h5>stats</h5>
+                        </div>
                         <div className="profile__summaryGame">Game 2</div>
                         <div className="profile__summaryGame">Game 3</div>
                         <div className="profile__summaryGame">Game 4</div>

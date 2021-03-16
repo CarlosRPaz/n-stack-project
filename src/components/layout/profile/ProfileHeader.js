@@ -9,6 +9,11 @@ import GroupAddIcon from '@material-ui/icons/GroupAdd';
 import { useSelector } from "react-redux";
 import { selectUser } from "./../../../features/userSlice";
 
+import TwitterIcon from '@material-ui/icons/Twitter';
+import YouTubeIcon from '@material-ui/icons/YouTube';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import TwitchIcon from "./../../../img/twitchicon.svg";
+
 function ProfileHeader() {
     const user = useSelector(selectUser);
     return (
@@ -45,6 +50,12 @@ function ProfileHeader() {
                         <div className='profileheader__bodyStatsCol'>
                             <span className='profileheader__bodyStatsColTitle'>Connections</span>
                             <span className='profileheader__bodyStatsColNumber'>648</span>
+                        </div>
+                        <div className="profileheader__socials">
+                            <img src={TwitchIcon} className="profileheader__socialIcons-twitch" alt="" />
+                            <YouTubeIcon className="profileheader__socialIcons" />
+                            <TwitterIcon className="profileheader__socialIcons" />
+                            <LinkedInIcon className="profileheader__socialIcons" />
                         </div>
                     </div>
                 </div>

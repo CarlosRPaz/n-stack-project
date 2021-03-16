@@ -16,7 +16,7 @@ const Post = forwardRef(({ name, description, message, photoUrl }, ref) => {
                     <h2>{name}</h2>
                     <p>{description}</p>
                 </div>
-                <MoreVertIcon className='moreverticon' />
+                <MoreVertIcon className='post__moreverticon' />
             </div>
 
             <div className="post__body">
