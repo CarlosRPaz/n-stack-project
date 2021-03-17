@@ -5,28 +5,41 @@ import { Avatar } from '@material-ui/core';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import FormatQuoteIcon from '@material-ui/icons/FormatQuote';
 
-import axios from './../../../api/axios';
-import requests from './../../../api/Requests';
+import rein from './../../../img/rein.PNG';
+import winston from './../../../img/winston.PNG';
+import sigma from './../../../img/sigma.PNG';
+
+import axios from './../../../axios';
+import requests from './../../../Requests';
 
 function Profile() {
 
     const [playerStats, setPlayerStats] = useState([]);
 
+    {/*
     useEffect(() => {
-        async function fetchData() {
-            const request = await axios.get(requests.fetchPlayerStats);
-            setPlayerStats(
-                request.data.results[
-                Math.floor(Math.random() * request.data.results.length - 1)
-                ]
-            );
-            return request;
-        }
+        fetch("https://call-of-duty-modern-warfare.p.rapidapi.com/warzone/Amartin743/psn", {
+            "method": "GET",
+            "headers": {
+                "x-rapidapi-key": "4dd84053b2msh20aab8d254b90e5p1f4505jsn5f8f2d5658ad",
+                "x-rapidapi-host": "call-of-duty-modern-warfare.p.rapidapi.com"
+            }
+        })
+            .then((res) => res.json())
+            .then((data) => {
+                console.log(data);
+                setPlayerStats(data.br);
+                console.log('playerStats >>>');
+                console.log(playerStats.wins);
+            })
+            .catch(err => {
+                console.error(err);
+            });
+    }, []);
+    */}
 
-        fetchData();
-    }, [])
 
-    console.log(playerStats);
+    console.log(playerStats[0]);
 
     return (
         <div className='profile'>
@@ -36,14 +49,54 @@ function Profile() {
                 <div className="profile__main">
                     <div className="profile__summary">
                         <h4>Summary</h4>
-                        <div className="profile__summaryGame">Game 1
-                        <h5>Username</h5>
-                            <h5>Game</h5>
-                            <h5>stats</h5>
+                        <div className="profile__summary-game-wrapper">
+                            <div className="profile__summary-game">
+                                <div className="profile__summary-game-header-top">
+                                    <img
+                                        src="https://upload.wikimedia.org/wikipedia/en/thumb/5/51/Overwatch_cover_art.jpg/220px-Overwatch_cover_art.jpg"
+                                        alt=""
+                                    />
+                                    <div className="profile__summary-game-header-top-info">
+                                        <h5>Overwatch</h5>
+                                        <div className="profile__summary-game-header-top-info-col-container">
+                                            <div className="profile__summary-game-header-top-info-col">
+                                                <h6>Skill Rating</h6>
+                                                <img
+                                                    src="https://d1u1mce87gyfbn.cloudfront.net/game/rank-icons/rank-GrandmasterTier.png"
+                                                    alt=""
+                                                />
+                                            </div>
+                                            <div className="profile__summary-game-header-top-info-col">
+                                                <h6>Main Role</h6>
+                                                <img
+                                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Tank_icon.svg/1200px-Tank_icon.svg.png"
+                                                    alt=""
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="profile__summary-game-header-bottom">
+                                    <div className="profile__summary-game-header-bottom1">
+                                        <h6>Main Characters</h6>
+                                        <div>
+                                            <img src={rein} alt="" />
+                                            <img src={winston} alt="" />
+                                            <img src={sigma} alt="" />
+                                        </div>
+                                    </div>
+                                    <div className="profile__summary-game-header-bottom1">2</div>
+                                </div>
+                            </div>
+                            <div className="profile__summary-game">
+                                {/*<h5>Call of Duty: Modern Warfare</h5>
+                                <p>Wins: {playerStats.wins}</p>
+                                <p>Kills: {playerStats.kills}</p>
+                                <p>K/D: {playerStats.kdRatio}</p>
+                                <p>Top-Tens: {playerStats.topTen}</p>*/}
+                            </div>
+                            <div className="profile__summary-game">Game 1 </div>
                         </div>
-                        <div className="profile__summaryGame">Game 2</div>
-                        <div className="profile__summaryGame">Game 3</div>
-                        <div className="profile__summaryGame">Game 4</div>
                     </div>
 
                     <div className="profile__submain">
@@ -113,7 +166,7 @@ function Profile() {
                                         alt=""
                                     />
                                     <div className="highlight__body">
-                                        <div className="highlight__title">Zenyatta 6k</div>
+                                        <div className="highlight__title">Search & Destroy Ace</div>
                                         <div className="highlight__stats">
                                             <div className="highlight__stat">
                                                 <div className="highlight__statNum">23.6k</div>
@@ -137,7 +190,7 @@ function Profile() {
                                         alt=""
                                     />
                                     <div className="highlight__body">
-                                        <div className="highlight__title">Zenyatta 6k</div>
+                                        <div className="highlight__title">Warzone 180 Headshot</div>
                                         <div className="highlight__stats">
                                             <div className="highlight__stat">
                                                 <div className="highlight__statNum">23.6k</div>
@@ -158,6 +211,8 @@ function Profile() {
                             </div>
                         </div>
                     </div>
+
+                    {/*<button onClick={getProfile}>Get Profile</button>*/}
 
                     <div className="profile__reviews">
                         <h4>Reviews</h4>
