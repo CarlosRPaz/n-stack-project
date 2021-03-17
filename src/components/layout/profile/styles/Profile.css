@@ -11,6 +11,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .profile__body {
@@ -83,6 +84,7 @@
 
 .profile__summary-game h6 {
   font-size: 14px;
+  margin: 10px 0 5px 0;
 }
 
 .profile__summary-game-header-top {
@@ -167,13 +169,29 @@
 }
 
 .profile__summary-game-header-bottom1 div img {
-  width: 60px;
+  width: 50px;
   -o-object-fit: contain;
      object-fit: contain;
 }
 
 .profile__summary-game-header-bottom2 {
   justify-items: center;
+}
+
+.profile__summary-game-header-bottom2 div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 14px;
+}
+
+.profile__summary-game-header-bottom2 div span {
+  font-weight: 600;
+  float: right;
 }
 
 .profile__submain {

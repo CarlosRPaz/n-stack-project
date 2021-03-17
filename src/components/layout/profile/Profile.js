@@ -38,9 +38,6 @@ function Profile() {
     }, []);
     */}
 
-
-    console.log(playerStats[0]);
-
     return (
         <div className='profile'>
             <div className="profile__body">
@@ -85,7 +82,15 @@ function Profile() {
                                             <img src={sigma} alt="" />
                                         </div>
                                     </div>
-                                    <div className="profile__summary-game-header-bottom1">2</div>
+                                    <div className="profile__summary-game-header-bottom2">
+                                        <h6>Competitive Stats</h6>
+                                        <div >
+                                            <p>Dmg / 10 min: <span>000</span></p>
+                                            <p>Elims / 10 min: <span>000</span></p>
+                                            <p>Deaths / 10 min: <span>000</span></p>
+                                            <p>Hours played: <span>000</span></p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div className="profile__summary-game">
